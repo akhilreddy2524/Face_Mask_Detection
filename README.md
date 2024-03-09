@@ -6,9 +6,7 @@ This project utilizes deep learning techniques to detect whether individuals in 
 [https://www.kaggle.com/datasets/omkargurav/face-mask-dataset]
 ### Description
 Two datasets have been utilized for testing the current technique. Dataset 1 consists of a total of 1376 images, with 690 images depicting individuals wearing face covers and the remaining 686 images showing individuals without face covers. Figure 1 provides a representative sample of the dataset, featuring frontal face presentations with a single individual in each frame. The individuals in the images wear masks with a uniform white color.
-<div style="text-align: center;">
-    <img src="images/Dataset1_Sample.png" width="300">
-</div>
+<img src="images/Dataset2_Sample.png" width="300">
 Fig. 1. Samples from Dataset 1 including faces without masks and with masks <br>
 The second dataset sourced from Kaggle comprises 853 images, wherein faces are annotated with either a mask or without a mask. Figure 2 showcases various face orientations such as head turns, slants, and inclinations, along with diverse facial expressions captured in the frames. Additionally, this dataset encompasses various types of masks with different colors.
 <img src="images/Dataset2_Sample.png" width="300">
