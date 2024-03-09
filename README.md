@@ -43,7 +43,7 @@ The proposed technique comprises a coarse classifier and a pre-trained Convoluti
 ### B. Training of Model
 * Building the model using CNN architecture: Utilizing Sequential CNN architecture, comprising convolution layers followed by Rectified Linear Unit (ReLU) and MaxPooling layers. Dropout layers are added to reduce overfitting. The final layer with two outputs for 'with mask' and 'without mask' categories employs the Softmax activation function.
 * Splitting the data and training the CNN model: Training the model using a specific dataset and testing it against another dataset. A proper train-test split and ModelCheckpoint for validation loss monitoring are employed. The model is trained for 20 epochs, balancing accuracy and the risk of overfitting.
-The system efficiently detects partially obstructed faces, considering obstruction levels at four regions - nose, mouth, chin, and eyes, to differentiate between masked and uncovered faces. However, challenges such as varying angles and lack of clarity in video streams are encountered. Following instructions from several frames of the video aids in making better decisions regarding the 'with mask' or 'without mask' classification.
+<br>The system efficiently detects partially obstructed faces, considering obstruction levels at four regions - nose, mouth, chin, and eyes, to differentiate between masked and uncovered faces. However, challenges such as varying angles and lack of clarity in video streams are encountered. Following instructions from several frames of the video aids in making better decisions regarding the 'with mask' or 'without mask' classification.
 <br><img src="images/Trained_Model.png" width="300"><br>
 ## Result and Conclusion
 <br><img src="images/Result.png" width="800"><br>
@@ -52,4 +52,4 @@ Upon implementation of the proposed face mask detection system, promising result
 * Public Safety: Monitoring compliance with face mask mandates in public spaces like airports, malls, and public transportation.
 * Workplace Safety: Enforcing face mask policies in offices, factories, and construction sites to safeguard employee health.
 * Healthcare: Assisting healthcare professionals in ensuring proper protective measures are followed within hospitals, clinics, and quarantine facilities.
-This Face Mask Detection project not only contributes to public health initiatives but also showcases the potential of deep learning in addressing real-world challenges. By making the project available on GitHub, it encourages collaboration, feedback, and further advancements in this critical domain.
+<br>This Face Mask Detection project not only contributes to public health initiatives but also showcases the potential of deep learning in addressing real-world challenges. By making the project available on GitHub, it encourages collaboration, feedback, and further advancements in this critical domain.
