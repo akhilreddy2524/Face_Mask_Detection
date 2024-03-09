@@ -1,4 +1,4 @@
-# Movie Review Portal
+# Face Mask Detection
 ## Project Description
 This project utilizes deep learning techniques to detect whether individuals in images or live video streams are wearing face masks or not. With the ongoing global pandemic, adherence to face mask usage has become crucial in mitigating the spread of infectious diseases. This Face Mask Detection system provides a robust solution for monitoring compliance in various settings, including public spaces, workplaces, and healthcare facilities.
 ## Dataset Description
