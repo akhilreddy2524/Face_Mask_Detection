@@ -6,10 +6,10 @@ This project utilizes deep learning techniques to detect whether individuals in 
 [https://www.kaggle.com/datasets/omkargurav/face-mask-dataset]
 ### Description
 Two datasets have been utilized for testing the current technique. Dataset 1 consists of a total of 1376 images, with 690 images depicting individuals wearing face covers and the remaining 686 images showing individuals without face covers. Figure 1 provides a representative sample of the dataset, featuring frontal face presentations with a single individual in each frame. The individuals in the images wear masks with a uniform white color.
-<img src="images/Dataset2_Sample.png" width="300">
+<br><img src="images/Dataset2_Sample.png" width="300"><br>
 Fig. 1. Samples from Dataset 1 including faces without masks and with masks <br>
 The second dataset sourced from Kaggle comprises 853 images, wherein faces are annotated with either a mask or without a mask. Figure 2 showcases various face orientations such as head turns, slants, and inclinations, along with diverse facial expressions captured in the frames. Additionally, this dataset encompasses various types of masks with different colors.
-<img src="images/Dataset2_Sample.png" width="300">
+<br><img src="images/Dataset2_Sample.png" width="300"><br>
 Fig. 2. Samples from Dataset 2 including faces without masks and with masks
 ## Overview
 ### Key Features
@@ -39,14 +39,14 @@ The proposed technique comprises a coarse classifier and a pre-trained Convoluti
 * Data Visualization: Visualizing the total number of images in the dataset for both classes - 'with mask' and 'without mask'. Labels are assigned accordingly as [0, 1].
 * Conversion of RGB image to Gray image: Grayscale images are utilized for extracting descriptors instead of working on color images immediately, reducing computational requirements.
 * Image Reshaping: Reshaping images into three-dimensional tensors and normalizing pixel values to a range between 0 and 1. Data is then converted to four-dimensional arrays, with 1 indicating grayscale images. Categorical labels are assigned for the final layer of the neural network.
-<img src="images/GrayScale" width="300">
+<img src="images/Grayscale.png" width="300">
 ### B. Training of Model
 * Building the model using CNN architecture: Utilizing Sequential CNN architecture, comprising convolution layers followed by Rectified Linear Unit (ReLU) and MaxPooling layers. Dropout layers are added to reduce overfitting. The final layer with two outputs for 'with mask' and 'without mask' categories employs the Softmax activation function.
 * Splitting the data and training the CNN model: Training the model using a specific dataset and testing it against another dataset. A proper train-test split and ModelCheckpoint for validation loss monitoring are employed. The model is trained for 20 epochs, balancing accuracy and the risk of overfitting.
 The system efficiently detects partially obstructed faces, considering obstruction levels at four regions - nose, mouth, chin, and eyes, to differentiate between masked and uncovered faces. However, challenges such as varying angles and lack of clarity in video streams are encountered. Following instructions from several frames of the video aids in making better decisions regarding the 'with mask' or 'without mask' classification.
-<img src="images/Trained_Model" width="300">
+<img src="images/Trained_Model.png" width="300">
 ## Result and Conclusion
-![Alt text](images/Result.png)
+<img src="images/Result" width="300">
 Upon implementation of the proposed face mask detection system, promising results were achieved. The trained Convolutional Neural Network (CNN) model demonstrated high accuracy in classifying images into 'with mask' and 'without mask' categories. Through rigorous training and validation processes, the model showcased robustness and generalization capabilities, effectively handling various facial orientations and occlusions. Real-world testing further validated the system's effectiveness, as it accurately detected individuals wearing masks even in challenging scenarios such as partial obstructions or varying lighting conditions. Additionally, the system's efficient utilization of computational resources and seamless integration with data preprocessing and model training pipelines underscore its practical applicability. These results affirm the viability of the proposed method for widespread deployment in diverse settings, contributing significantly to public health initiatives aimed at controlling the spread of infectious diseases.
 ### Application
 * Public Safety: Monitoring compliance with face mask mandates in public spaces like airports, malls, and public transportation.
