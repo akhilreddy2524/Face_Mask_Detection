@@ -39,14 +39,14 @@ The proposed technique comprises a coarse classifier and a pre-trained Convoluti
 * Data Visualization: Visualizing the total number of images in the dataset for both classes - 'with mask' and 'without mask'. Labels are assigned accordingly as [0, 1].
 * Conversion of RGB image to Gray image: Grayscale images are utilized for extracting descriptors instead of working on color images immediately, reducing computational requirements.
 * Image Reshaping: Reshaping images into three-dimensional tensors and normalizing pixel values to a range between 0 and 1. Data is then converted to four-dimensional arrays, with 1 indicating grayscale images. Categorical labels are assigned for the final layer of the neural network.
-<img src="images/Grayscale.png" width="600">
+<br><img src="images/Grayscale.png" width="600"><br>
 ### B. Training of Model
 * Building the model using CNN architecture: Utilizing Sequential CNN architecture, comprising convolution layers followed by Rectified Linear Unit (ReLU) and MaxPooling layers. Dropout layers are added to reduce overfitting. The final layer with two outputs for 'with mask' and 'without mask' categories employs the Softmax activation function.
 * Splitting the data and training the CNN model: Training the model using a specific dataset and testing it against another dataset. A proper train-test split and ModelCheckpoint for validation loss monitoring are employed. The model is trained for 20 epochs, balancing accuracy and the risk of overfitting.
 The system efficiently detects partially obstructed faces, considering obstruction levels at four regions - nose, mouth, chin, and eyes, to differentiate between masked and uncovered faces. However, challenges such as varying angles and lack of clarity in video streams are encountered. Following instructions from several frames of the video aids in making better decisions regarding the 'with mask' or 'without mask' classification.
-<img src="images/Trained_Model.png" width="300">
+<br><img src="images/Trained_Model.png" width="300"><br>
 ## Result and Conclusion
-<img src="images/Result.png" width="1000">
+<br><img src="images/Result.png" width="1000"><br>
 Upon implementation of the proposed face mask detection system, promising results were achieved. The trained Convolutional Neural Network (CNN) model demonstrated high accuracy in classifying images into 'with mask' and 'without mask' categories. Through rigorous training and validation processes, the model showcased robustness and generalization capabilities, effectively handling various facial orientations and occlusions. Real-world testing further validated the system's effectiveness, as it accurately detected individuals wearing masks even in challenging scenarios such as partial obstructions or varying lighting conditions. Additionally, the system's efficient utilization of computational resources and seamless integration with data preprocessing and model training pipelines underscore its practical applicability. These results affirm the viability of the proposed method for widespread deployment in diverse settings, contributing significantly to public health initiatives aimed at controlling the spread of infectious diseases.
 ### Application
 * Public Safety: Monitoring compliance with face mask mandates in public spaces like airports, malls, and public transportation.
