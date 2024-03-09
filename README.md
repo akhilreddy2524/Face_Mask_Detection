@@ -53,3 +53,8 @@ Upon implementation of the proposed face mask detection system, promising result
 * Workplace Safety: Enforcing face mask policies in offices, factories, and construction sites to safeguard employee health.
 * Healthcare: Assisting healthcare professionals in ensuring proper protective measures are followed within hospitals, clinics, and quarantine facilities.
 <br>This Face Mask Detection project not only contributes to public health initiatives but also showcases the potential of deep learning in addressing real-world challenges. By making the project available on GitHub, it encourages collaboration, feedback, and further advancements in this critical domain.
+## References
+<br>[https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/]<br>
+<br>[https://www.electronicwings.com/users/ptksuraj99/projects/437/face-mask-detection-using-raspberry-pi]<br>
+<br>[https://data-flair.training/blogs/face-mask-detection-with-python/]<br>
+<br>[https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/]
