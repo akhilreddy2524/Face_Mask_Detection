@@ -9,7 +9,7 @@ Two datasets have been utilized for testing the current technique. Dataset 1 con
 <div style="text-align: center;">
     <img src="images/Dataset1_Sample.png" width="300">
 </div>
-Fig. 1. Samples from Dataset 1 including faces without masks and with masks
+Fig. 1. Samples from Dataset 1 including faces without masks and with masks <br>
 The second dataset sourced from Kaggle comprises 853 images, wherein faces are annotated with either a mask or without a mask. Figure 2 showcases various face orientations such as head turns, slants, and inclinations, along with diverse facial expressions captured in the frames. Additionally, this dataset encompasses various types of masks with different colors.
 ![Alt text](images/Dataset2_Sample.png)
 Fig. 2. Samples from Dataset 2 including faces without masks and with masks
