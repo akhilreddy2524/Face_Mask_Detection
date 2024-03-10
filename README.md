@@ -1,4 +1,6 @@
 # Face Mask Detection
+### Project Timeline Note: 
+This project was originally developed between August 2021 and December 2021. However, it has been recently uploaded to GitHub for sharing and documentation purposes. While the commit history may not reflect the original development timeline, feel free to explore the project and reach out with any questions or feedback.
 ## Project Description
 This project utilizes deep learning techniques to detect whether individuals in images or live video streams are wearing face masks or not. With the ongoing global pandemic, adherence to face mask usage has become crucial in mitigating the spread of infectious diseases. This Face Mask Detection system provides a robust solution for monitoring compliance in various settings, including public spaces, workplaces, and healthcare facilities.
 ## Dataset Description
